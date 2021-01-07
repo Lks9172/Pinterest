@@ -5,4 +5,4 @@ from django.shortcuts import render
 
 
 def hello_world(request):
-    return HttpResponse("마! 내가 으이!")
+    return HttpResponse("hello world")
