@@ -145,3 +145,9 @@ STATICFILES_DIRS = [
 
 LOGIN_REDIRECT_URL = reverse_lazy('accountapp:hello_world')
 LOGOUT_REDIRECT_URL = reverse_lazy('accountapp:login')
+
+# url상의 경로
+MEDIA_URL = '/media/'
+
+# pragmatic app dict의 미디어파일 디렉토리를 설정
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
