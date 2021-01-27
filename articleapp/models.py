@@ -14,3 +14,6 @@ class Article(models.Model):
     content = models.TextField(null=True)
 
     created_at = models.DateTimeField(auto_created=True, null=True)
+
+    class Meta:
+        ordering = ['created_at'] # 이 부분을 추가
